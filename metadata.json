@@ -1,0 +1,6 @@
+{
+  "name": "Toy Land",
+  "description": "An interactive, multi-language educational kids' playground with audio speech and games.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

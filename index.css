@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Quicksand:wght@300..700&display=swap');
+
+/* Apply playful, rounded kid-friendly fonts globally */
+body, button, input, select, textarea {
+  font-family: "Fredoka", "Quicksand", ui-sans-serif, system-ui, -apple-system, sans-serif !important;
+  background-color: #fffaf0;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Custom styles for cute cloud background details */
+.bg-bubble-pattern {
+  background-image: radial-gradient(circle, rgba(255,255,255,0.15) 8%, transparent 8%),
+                    radial-gradient(circle, rgba(255,255,255,0.15) 8%, transparent 8%);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+}
+
+/* Custom scrollbar to keep it sleek and rounded */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 99px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 99px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.18);
+}
+
+/* Keyframes for subtle floating animations of background clouds */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 8s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
